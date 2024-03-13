@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    background-image: url("https://images.unsplash.com/photo-1656608138197-2aea23cc3564?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    padding-top: 20px;
+    width: 100%;
+    z-index: -1;
+}
+.navbars{
+    max-width: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+     margin: 10px auto; 
+    align-items: center;
+}
+.navbar img{
+    margin-left: 50px;
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+}
+.navbar img:hover{
+    Transform:rotateY(1turn);
+    filter: drop-shadow(16px 16px 20px rgb(95, 95, 214));
+}
+.icon{
+    position: absolute;
+    top: 45px;
+    right: 170px;
+    background-color: white;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow:  1px 1px 3px blue;
+}
+.icon i{
+    font-size: 25px;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+.head ul{
+    color: rgb(170, 179, 179);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 250px;  
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.head a{
+    color: white;
+}
+.line{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #220d96;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+.line:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+ } 
+ section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main1{
+   padding: 100px 100px;
+   width: 40%;
+}
+.metin h1{
+    font-family: "Slackside One", cursive; 
+   font-size: 70px;
+   color: white;
+}
+.metin p{
+    font-family: "Slackside One", cursive; 
+    padding: 20px 0;
+    text-align: justify;
+    width: 400px;
+    line-height:30px;
+    font-size: 25px;
+    color: white;
+}
+.main1 h1:hover{
+    text-shadow: 3px 4px 3px red;
+ }
+.main1 button{
+    color: white;
+    font-family:"Slackside One", cursive;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    background: linear-gradient(90deg, rgb(12, 6, 119) 0%, rgb(30, 134, 140) 45%, rgba(19,204,214,1) 100%);
+}
+.main2{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.card img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+.card img:hover{
+    box-shadow:  1px 1px 3px blue;  
+}
+.cards{
+    gap:25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+}
+.card p{
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+    padding: 0 5px;
+    color: rgb(232, 233, 235);
+}
+
+  .card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 2px 5px 31px -1px rgba(6, 6, 130, 0.75);
+  -webkit-box-shadow: 2px 5px 31px -1px rgba(39, 39, 207, 0.75);
+  -moz-box-shadow: 2px 5px 31px -1px rgba(15, 15, 175, 0.75);
+  }
+ 
+.mtn p{
+    text-align: center;
+}
